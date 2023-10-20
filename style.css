@@ -1,0 +1,30 @@
+.box {
+  margin: 400px 0 0 750px;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation: rotate 3s linear infinite normal forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(0, 0);
+    background-color: blue;
+  }
+  25% {
+    background-color: darkgreen;
+    transform: translate(0, 100px);
+  }
+  50% {
+    background-color: chartreuse;
+    transform: translate(100px, 100px);
+  }
+  75% {
+    background-color: crimson;
+    transform: translate(100px, 0);
+  }
+  100% {
+    background-color: blue;
+    transform: translate(0, 0);
+  }
+}
